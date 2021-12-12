@@ -188,7 +188,7 @@ def predict(iimage_path, imodel, icat_to_name, itopk=5):
         # Implement the code to predict the class from an image file
         # Can we do this using gpu?
         device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-        imodel.to(device)
+        #imodel.to(device)
         
         #Let us load the image
         try:
